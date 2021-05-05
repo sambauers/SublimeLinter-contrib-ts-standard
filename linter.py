@@ -1,5 +1,6 @@
 from SublimeLinter.lint import NodeLinter
 
+
 class TSStandard(NodeLinter):
     cmd = 'ts-standard --stdin --stdin-filename ${file}'
     name = 'TS Standard'
