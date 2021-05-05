@@ -1,6 +1,6 @@
 # SublimeLinter-contrib-ts-standard
 
-[![Build Status](https://travis-ci.org/sambauers/SublimeLinter-contrib-ts-standard.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-ts-standard)
+[![Build Status](https://travis-ci.com/sambauers/SublimeLinter-contrib-ts-standard.svg?branch=master)](https://travis-ci.com/github/sambauers/SublimeLinter-contrib-ts-standard)
 
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter)
 provides an interface to [ts-standard](https://www.npmjs.com/package/ts-standard).
