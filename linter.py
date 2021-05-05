@@ -1,10 +1,10 @@
-from SublimeLinter.lint import Linter  # or NodeLinter, PythonLinter, ComposerLinter, RubyLinter
+from SublimeLinter.lint import NodeLinter
 
-
-class __class__(Linter):
-    cmd = '__cmd__'
-    regex = r''
-    multiline = False
+class TSStandard(NodeLinter):
+    cmd = 'ts-standard --stdin --stdin-filename ${file}'
+    name = 'TS Standard'
+    regex = r'^.+:(?P<line>\d+):(?P<col>\d+):\s*(?P<message>.+)'
     defaults = {
-        'selector': 'source.python'
+        'selector': 'source.ts, source.tsx',
+        'disable_if_not_dependency': False
     }
