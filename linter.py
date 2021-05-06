@@ -4,7 +4,7 @@ from SublimeLinter.lint import NodeLinter
 class TSStandard(NodeLinter):
     name = 'ts-standard'
     regex = r'^.+:(?P<line>\d+):(?P<col>\d+):\s*(?P<message>.+)'
-    multiline=True
+    multiline = True
     defaults = {
         'selector': 'source.ts, source.tsx',
         'disable_if_not_dependency': False
