@@ -20,9 +20,7 @@ class TSStandard(NodeLinter):
             )
 
         self.notify_failure()
-        message = 'The file must be saved before it can be linted by ts-standard'
-        logger.error(message)
         return (
             'echo',
-            f'<buffer>:1:1:{message}'
+            '<buffer>:1:1:The file must be saved before it can be linted by ts-standard'
         )
