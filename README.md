@@ -1,29 +1,26 @@
 # SublimeLinter-contrib-ts-standard
 
-[![Build Status](https://travis-ci.com/sambauers/SublimeLinter-contrib-ts-standard.svg?branch=master)](https://travis-ci.com/github/sambauers/SublimeLinter-contrib-ts-standard)
+[SublimeLinter](https://www.sublimelinter.com/en/latest/) plugin to provide linting with [standardjs](https://standardjs.com/#typescript). Matching `.ts` and `.tsx` source files.
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter)
-provides an interface to [ts-standard](https://www.npmjs.com/package/ts-standard).
-It will be used with files that have the “typescript” syntax.
+## Requirements
 
-## Installation
+1. SublimeLinter is a requirement, please follow the installation instructions [here](https://www.sublimelinter.com/en/latest/installation.html).
+2. Standard JS is a requirement, please follow the installation instructions [here](https://standardjs.com/index.html#install).
 
-SublimeLinter must be installed in order to use this plugin.
+## Install
 
-Please use [Package Control](https://packagecontrol.io) to install the linter
-plugin.
+1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette
+2. Select **Package Control: Install Package**
+3. Select **SublimeLinter-contrib-ts-standard**
 
-Before installing this plugin, you must ensure that `ts-standard` is installed
-on your system via NPM:
+### Linter Executable
 
-```sh
-npm install -g ts-standard
-```
+If a linter executable cannot be found, [follow these steps](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) to locate the source of the problem.
 
-In order for `ts-standard` to be executed by SublimeLinter, you must ensure that
-its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable).
+## Automatic Formatting
 
-## Settings
+Automatic formatting is not a task for a linter. However, it can be provided by the [StandardFormat](https://packagecontrol.io/packages/StandardFormat) package.
 
-- [SublimeLinter settings](http://sublimelinter.readthedocs.org/en/latest/settings.html)
-- [Linter settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html)
+## Contributing
+
+Contributions are more than welcome :) Should you like to help out, please bear in mind that contribution should follow the guidelines specified in the [pyproject.toml](./pyproject.toml) file. (**flake8**, **black**).
